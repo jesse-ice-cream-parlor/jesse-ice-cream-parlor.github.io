@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jesse's Ice Cream Parlor - Set Menu</title>
+  <link rel="icon" href="../assets/minimal-crest.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://script.google.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-page="manage">
+  <header>
+    <div class="brand">
+      <img src="../assets/dabney-crest.svg" alt="" width="45" height="55">
+      <h1>Jesse's Ice Cream Parlor</h1>
+    </div>
+    <nav><a href="../">Orders</a> · <a href="../plan/">Plan</a></nav>
+  </header>
+
+  <main>
+    <h2>Set Menu</h2>
+    <p id="status" role="status">Loading...</p>
+    <form id="menu-form">
+      <label for="flavors">Flavors, one per line</label>
+      <textarea id="flavors" name="flavors" rows="10" required></textarea>
+      <p class="muted">Saving starts a new event. The current orders are archived.</p>
+      <button type="submit">Start new event</button>
+    </form>
+
+    <section id="history-section" hidden>
+      <h2>History</h2>
+      <ul id="history-list"></ul>
+    </section>
+  </main>
+
+  <script src="../config.js"></script>
+  <script src="../planner.js"></script>
+  <script src="../app.js"></script>
+</body>
+</html>

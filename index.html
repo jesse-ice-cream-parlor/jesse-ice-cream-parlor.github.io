@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jesse's Ice Cream Parlor - Orders</title>
+  <link rel="icon" href="assets/minimal-crest.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://script.google.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="orders">
+  <header>
+    <a class="brand" href="./">
+      <img src="assets/dabney-crest.svg" alt="" width="45" height="55">
+      <h1>Jesse's Ice Cream Parlor</h1>
+    </a>
+    <nav><a href="plan/">Serving plan</a></nav>
+  </header>
+
+  <main>
+    <h2>Orders</h2>
+    <p id="status" role="status">Loading menu...</p>
+    <form id="order-form" hidden>
+      <label for="name">Your name</label>
+      <input id="name" name="name" autocomplete="name" required maxlength="80">
+
+      <table>
+        <thead><tr><th>Flavor</th><th>Scoops</th></tr></thead>
+        <tbody id="flavor-list"></tbody>
+      </table>
+
+      <button type="submit">Save order</button>
+    </form>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="planner.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

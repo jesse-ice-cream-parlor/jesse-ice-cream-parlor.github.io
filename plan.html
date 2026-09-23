@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jesse's Ice Cream Parlor - Serving Plan</title>
+  <link rel="icon" href="assets/minimal-crest.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://script.google.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="plan">
+  <header>
+    <a class="brand" href="./">
+      <img src="assets/dabney-crest.svg" alt="" width="45" height="55">
+      <h1>Jesse's Ice Cream Parlor</h1>
+    </a>
+    <nav><a href="./">Orders</a></nav>
+  </header>
+
+  <main>
+    <h2>Serving Plan</h2>
+    <p id="status" role="status">Calculating...</p>
+    <section id="orders" hidden>
+      <h3>Orders</h3>
+      <table>
+        <thead><tr><th>Name</th><th>Order</th><th>Cancel</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <section id="summary" hidden></section>
+    <table id="timeline" hidden>
+      <thead><tr><th>Action</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="planner.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

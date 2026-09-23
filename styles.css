@@ -1,0 +1,93 @@
+:root {
+  color-scheme: light;
+  font-family: "Comic Sans MS", "Comic Sans", "Comic Neue", cursive;
+  line-height: 1.5;
+  color: #222;
+  background: #fafafa;
+}
+
+body {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid #bbb;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand img {
+  flex: 0 0 auto;
+  width: 2.8rem;
+  height: auto;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: #b40000;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  h1 {
+    background: linear-gradient(90deg, #d00000, #d95f00, #a67c00, #168321, #006fc4, #6536b8, #b00078);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+label { display: block; margin-top: 1rem; }
+
+input, button {
+  box-sizing: border-box;
+  min-height: 2.5rem;
+  padding: 0.45rem 0.6rem;
+  font: inherit;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+  font: inherit;
+}
+
+input[type="number"] { width: 6rem; }
+
+#orders button {
+  margin-top: 0;
+}
+
+button { margin-top: 1rem; cursor: pointer; }
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.error { color: #a40000; }
+.muted { color: #666; }
+
+@media (max-width: 32rem) {
+  header { display: block; padding-bottom: 1rem; }
+  .brand img { width: 2.4rem; }
+}
